@@ -1,319 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Museum - Curator Cards</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e8f2ff 0%, #ffffff 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            color: #0066cc;
-            margin-bottom: 60px;
-        }
-
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .card-header {
-            padding: 30px;
-            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
-            color: white;
-        }
-
-        .card-header h2 {
-            font-size: 1.8em;
-            margin-bottom: 5px;
-        }
-
-        .card-header .period {
-            font-size: 0.95em;
-            opacity: 0.85;
-        }
-
-        .card-body {
-            padding: 30px;
-        }
-
-        .card-description {
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            font-size: 0.95em;
-        }
-
-        .card-section {
-            margin-bottom: 20px;
-        }
-
-        .card-section h3 {
-            font-size: 0.9em;
-            color: #0066cc;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .vocabulary-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-
-        .tag {
-            background: #f0f0f0;
-            color: #333;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            border: 1px solid #ddd;
-        }
-
-        .links {
-            list-style: none;
-        }
-
-        .links li {
-            margin-bottom: 8px;
-        }
-
-        .links a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: color 0.3s ease;
-        }
-
-        .links a:hover {
-            color: #0052a3;
-            text-decoration: underline;
-        }
-
-        .note {
-            background: #f0f8ff;
-            border-left: 4px solid #0066cc;
-            padding: 12px;
-            margin-top: 15px;
-            font-size: 0.85em;
-            color: #003d7a;
-            border-radius: 4px;
-        }
-
-        .not-confused {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 12px;
-            margin-top: 15px;
-            font-size: 0.85em;
-            color: #856404;
-            border-radius: 4px;
-        }
-
-        .footer {
-            text-align: center;
-            color: #003d7a;
-            opacity: 0.9;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .card-header {
-                padding: 20px;
-            }
-
-            .card-body {
-                padding: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Design Museum</h1>
-            <p>Curator Cards: A Journey Through Design Movements</p>
-        </div>
+      <div class="header">
+        <h1>Design Museum</h1>
+        <p>Curator Cards: A Journey Through Design Movements</p>
+      </div>
 
-        <div class="cards-grid">
-            <!-- Bauhaus Card -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>The Bauhaus</h2>
-                    <div class="period">1919-1933</div>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">
-                        The Bauhaus school, founded in 1919 by Walter Gropius in Weimar, Germany, revolutionized design by merging art, craft, and technology for mass production. Emphasizing "form follows function," it promoted functionalism, minimalism, and geometry in architecture, furniture, and typography. Relocating to Dessau in 1925, it built iconic glass-curtain-wall structures before Nazi pressure closed it in 1933, scattering masters like Mies van der Rohe worldwide. Its legacy shaped modernism and the International Style.
+      <div class="cards-grid">
+        <!-- Bauhaus Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2>The Bauhaus</h2>
+            <div class="period">1919-1933</div>
+          </div>
+          <div class="card-body">
+                                <p class="card-description">
+                        The Bauhaus school, founded in 1919 by Walter Gropius in Weimar, Germany, revolutionized design by unifying art, craft, and technology for a new age of industrial production. Guided by rationalism and a search for clarity, it championed geometric forms over ornamentation in architecture, furniture, and typography. Relocating to Dessau in 1925, it built iconic glass-curtain-wall structures before Nazi pressure closed it in 1933, scattering masters like Mies van der Rohe worldwide. Its legacy shaped modernism and the International Style.
                     </p>
 
                     <div class="card-section">
                         <h3>Vocabulary Tags</h3>
                         <div class="vocabulary-tags">
                             <span class="tag">Functionalism</span>
-                            <span class="tag">Minimalism</span>
-                            <span class="tag">Form-follows-function</span>
+                            <span class="tag">Rationalism</span>
+                            <span class="tag">Gesamtkunstwerk</span>
                             <span class="tag">Werkstatt</span>
                             <span class="tag">Typografie</span>
                         </div>
                     </div>
 
-                    <div class="card-section">
-                        <h3>Real Example Links</h3>
-                        <ul class="links">
-                            <li><a href="https://www.bauhaus.de/en/research/collection/" target="_blank">Bauhaus-Archiv Collection</a></li>
-                            <li><a href="https://bauhaus-dessau.de/en/" target="_blank">Bauhaus Museum Dessau</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="not-confused">
-                        <strong>Not to be confused with:</strong> Arts and Crafts because Bauhaus embraced industrial machines for affordable mass production, unlike the handmade, anti-industrial focus of Arts and Crafts.
-                    </div>
-
-                    <div class="note">
-                        <strong>Verified by:</strong> Bauhaus-Archiv / Museum für Gestaltung and TheArtStory
-                    </div>
-                </div>
+            <div class="card-section">
+              <h3>Real Example Links</h3>
+              <ul class="links">
+                <li>
+                  <a
+                    href="https://www.bauhaus.de/en/research/collection/"
+                    target="_blank"
+                    >Bauhaus-Archiv Collection</a
+                  >
+                </li>
+                <li>
+                  <a href="https://bauhaus-dessau.de/en/" target="_blank"
+                    >Bauhaus Museum Dessau</a
+                  >
+                </li>
+              </ul>
             </div>
 
-            <!-- Swiss Style Card -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Swiss Style</h2>
-                    <div class="period">1950s-1970s</div>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">
-                        Swiss Style, or International Typographic Style, emerged in 1950s Switzerland from schools like Basel and Zurich, prioritizing objectivity through sans-serif type, grids, and asymmetry. Pioneers Josef Müller-Brockmann and Armin Hofmann used flush-left rags, white space, and photography for clear communication in posters and books. It spread globally via Helvetica font, influencing corporate identity and modernism into the 1970s. Rejecting ornament, it stressed "legibility above all."
-                    </p>
-
-                    <div class="card-section">
-                        <h3>Vocabulary Tags</h3>
-                        <div class="vocabulary-tags">
-                            <span class="tag">Typographic grid</span>
-                            <span class="tag">Sans-serif</span>
-                            <span class="tag">Asymmetric layout</span>
-                            <span class="tag">Flush-left</span>
-                            <span class="tag">Objectivity</span>
-                        </div>
-                    </div>
-
-                    <div class="card-section">
-                        <h3>Real Example Links</h3>
-                        <ul class="links">
-                            <li><a href="https://museum-gestaltung.ch/en/graphic-design" target="_blank">Museum für Gestaltung Zürich Graphics</a></li>
-                            <li><a href="https://museum-gestaltung.ch/en/exhibition/swiss-design-collection" target="_blank">Swiss Design Collection</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="not-confused">
-                        <strong>Not to be confused with:</strong> Bauhaus because Swiss Style focused on strict typographic grids and sans-serifs for print in post-WWII Switzerland, while Bauhaus integrated broader crafts and architecture pre-1933.
-                    </div>
-
-                    <div class="note">
-                        <strong>Verified by:</strong> Museum für Gestaltung Zürich and Flintridge Design History
-                    </div>
-                </div>
+            <div class="not-confused">
+              <strong>Not to be confused with:</strong> Arts and Crafts because
+              Bauhaus embraced industrial machines for affordable mass
+              production, unlike the handmade, anti-industrial focus of Arts and
+              Crafts.
             </div>
 
-            <!-- Grunge Typography Card -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Grunge Typography</h2>
-                    <div class="period">1990s</div>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">
-                        Grunge Typography emerged in the early 1990s as a punk-fueled backlash against Swiss Style's rigid grids and pristine sans-serifs. Designers like David Carson layered distorted fonts, photocopy textures, and chaotic overlaps in Ray Gun magazine, embracing illegibility for raw emotion. Fueled by Seattle grunge music and desktop publishing, it favored distressed edges and handwritten scrawls through the late 1990s. This anti-corporate rebellion prioritized attitude over order, influencing zines and album art.
-                    </p>
-
-                    <div class="card-section">
-                        <h3>Vocabulary Tags</h3>
-                        <div class="vocabulary-tags">
-                            <span class="tag">Distressed texture</span>
-                            <span class="tag">Deconstruction</span>
-                            <span class="tag">Layered hierarchy</span>
-                            <span class="tag">Dingbat overlay</span>
-                            <span class="tag">Photocopy artifact</span>
-                        </div>
-                    </div>
-
-                    <div class="card-section">
-                        <h3>Real Example Links</h3>
-                        <ul class="links">
-                            <li><a href="https://collection.cooperhewitt.org/" target="_blank">Cooper Hewitt Grunge Typography</a></li>
-                            <li><a href="https://www.moma.org/collection/terms/" target="_blank">MoMA Design Collection</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="not-confused">
-                        <strong>Not to be confused with:</strong> Postmodernism because Grunge specifically rejected Swiss precision via gritty, music-driven distortion in the 1990s, while Postmodernism broadly played with historical quotes earlier.
-                    </div>
-
-                    <div class="note">
-                        <strong>Verified by:</strong> The Verge and PRINT Magazine archives
-                    </div>
-                </div>
+            <div class="note">
+              <strong>Verified by:</strong> Bauhaus-Archiv / Museum für
+              Gestaltung and TheArtStory
             </div>
+          </div>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2026 Design Museum Curator Cards | A exploration of design history</p>
+        <!-- Swiss Style Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Swiss Style</h2>
+            <div class="period">1950s-1970s</div>
+          </div>
+          <div class="card-body">
+            <p class="card-description">
+              Swiss Style, or International Typographic Style, emerged in the 1950s
+              from Swiss design schools, championing objective communication.
+              This methodology, taught by pioneers like Josef Müller-Brockmann
+              and Armin Hofmann, utilized a typographic grid, asymmetrical
+              layouts, and sans-serif letterforms—especially the 1957 typeface
+              Helvetica. It treated white space as an active element and favored
+              photography for its realism. The style’s structured clarity made
+              it a global force in corporate identity and print, prioritizing
+              clear communication above all.
+            </p>
+
+            <div class="card-section">
+              <h3>Vocabulary Tags</h3>
+              <div class="vocabulary-tags">
+                <span class="tag">Typographic grid</span>
+                <span class="tag">Sans-serif</span>
+                <span class="tag">Asymmetric layout</span>
+                <span class="tag">Flush-left</span>
+                <span class="tag">Objectivity</span>
+              </div>
+            </div>
+
+            <div class="card-section">
+              <h3>Real Example Links</h3>
+              <ul class="links">
+                <li>
+                  <a
+                    href="https://museum-gestaltung.ch/en/graphic-design"
+                    target="_blank"
+                    >Museum für Gestaltung Zürich Graphics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://museum-gestaltung.ch/en/exhibition/swiss-design-collection"
+                    target="_blank"
+                    >Swiss Design Collection</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="not-confused">
+              <strong>Not to be confused with:</strong> Bauhaus because Swiss
+              Style focused on strict typographic grids and sans-serifs for
+              print in post-WWII Switzerland, while Bauhaus integrated broader
+              crafts and architecture pre-1933.
+            </div>
+
+            <div class="note">
+              <strong>Verified by:</strong> Museum für Gestaltung Zürich and
+              Flintridge Design History
+            </div>
+          </div>
         </div>
+
+        <!-- Grunge Typography Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Grunge Typography</h2>
+            <div class="period">1990s</div>
+          </div>
+          <div class="card-body">
+            <p class="card-description">
+              Grunge Typography emerged in the early 1990s as a punk-fueled
+              backlash against Swiss Style's rigid grids and pristine
+              sans-serifs. Designers like David Carson layered distorted fonts,
+              photocopy textures, and chaotic overlaps in Ray Gun magazine,
+              embracing illegibility for raw emotion. Fueled by Seattle grunge
+              music and desktop publishing, it favored distressed edges and
+              handwritten scrawls through the late 1990s. This anti-corporate
+              rebellion prioritized attitude over order, influencing zines and
+              album art.
+            </p>
+
+            <div class="card-section">
+              <h3>Vocabulary Tags</h3>
+              <div class="vocabulary-tags">
+                <span class="tag">Distressed texture</span>
+                <span class="tag">Deconstruction</span>
+                <span class="tag">Layered hierarchy</span>
+                <span class="tag">Dingbat overlay</span>
+                <span class="tag">Photocopy artifact</span>
+              </div>
+            </div>
+
+            <div class="card-section">
+              <h3>Real Example Links</h3>
+              <ul class="links">
+                <li>
+                  <a href="https://collection.cooperhewitt.org/" target="_blank"
+                    >Cooper Hewitt Grunge Typography</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.moma.org/collection/terms/"
+                    target="_blank"
+                    >MoMA Design Collection</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="not-confused">
+              <strong>Not to be confused with:</strong> New Wave, because Grunge embraced a lo-fi, distressed, and often illegible aesthetic driven by 1990s punk rock, while the digital-first New Wave of the 1980s celebrated the clean, layered possibilities of new technology and video imagery. Both are forms of Postmodernism.
+            </div>
+
+            <div class="note">
+              <strong>Verified by:</strong> The Verge and PRINT Magazine
+              archives
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          &copy; 2026 Design Museum Curator Cards | A exploration of design
+          history
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
