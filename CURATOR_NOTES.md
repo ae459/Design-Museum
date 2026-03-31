@@ -1,17 +1,20 @@
-The Bauhaus:
+# Curator Notes: Marvel Comic Book Museum Transformation
 
-The Bauhaus school, founded in 1919 by Walter Gropius in Weimar, Germany, revolutionized design by merging art, craft, and technology for mass production. Emphasizing “form follows function,” it promoted functionalism, minimalism, and geometry in architecture, furniture, and typography. Relocating to Dessau in 1925, it built iconic glass-curtain-wall structures before Nazi pressure closed it in 1933, scattering masters like Mies van der Rohe worldwide. Its legacy shaped modernism and the International Style.
+My process for converting the design-centric website into a Marvel comic book museum involved a comprehensive overhaul of the site's content and visual identity.
 
-Vocabulary Tags
-Functionalism, Minimalism, Form-follows-function, Werkstatt, Typografie
+First, I analyzed the existing file structure, which included `index.html`, `style.css`, and `prompt-pack.html`.
 
-Real Example Links
-• Bauhaus-Archiv Collection: https://www.bauhaus.de/en/research/collection/
-• Bauhaus Museum Dessau: https://bauhaus-dessau.de/en/
+The core of the transformation was the `index.html` file. I replaced the existing content about design movements with a historical overview of Marvel Comics. This new content was structured into three distinct "eras":
 
-Not to be confused with Arts and Crafts because Bauhaus embraced industrial machines for affordable mass production, unlike the handmade, anti-industrial focus of Arts and Crafts.
+1.  **The Golden Age (1939-1950s):** Focusing on the origins with Timely Comics, the creation of iconic characters like Captain America, and the influence of World War II. I highlighted key figures such as Martin Goodman, Joe Simon, and Jack Kirby.
+2.  **The Silver Age (1961-1970s):** This section details the creative explosion led by Stan Lee and Jack Kirby, which gave birth to the Fantastic Four, Spider-Man, and the Avengers, introducing more complex and relatable superheroes.
+3.  **The Modern Age (1980s-Present):** Here, the focus shifts to darker, more intricate storylines from writers like Chris Claremont and Frank Miller, the rise of major crossover events, and the eventual launch of the Marvel Cinematic Universe.
 
-I verified this by checking Bauhaus-Archiv / Museum für Gestaltung and TheArtStory.
+To match the new theme, I completely rewrote the `style.css` file. The new design incorporates a classic comic book aesthetic, using a bold color palette dominated by Marvel's signature red. I also integrated comic-style fonts and visual effects like text shadows and blocky borders to evoke the look and feel of a printed comic book.
+
+Finally, I removed the `prompt-pack.html` file, as its content was no longer relevant to the new Marvel-themed site.
+
+The result is a thematically consistent and engaging website that serves as a virtual museum exhibit on the history of Marvel Comics.
 
 Swiss Style/ International Typographic Style:
 
