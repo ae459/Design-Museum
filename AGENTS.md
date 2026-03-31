@@ -1,20 +1,16 @@
-# AGENTS.md - Design History Discussion Prompts
+# AGENTS.md - Marvel Comic Book Museum Prompts
 
-## Initial Prompt (Bauhaus)
+## Prompt 1 (The Golden Age)
 
-"I dont want a long winded answer or computer code, i just want to discuss a little about history. i want to start with The Bauhaus. 100 words of body text, 5 vocabulary tags(domain terms, not vibes), 2 real example links(with the actual link and use museums, archives, or credited design collections), 1 "not to be confuse with.... because...." sentence, and 1 accountability note "i verified this by checking [source].""
+"Provide a brief history of Marvel's Golden Age (1939-1950s). Include the original company name, its founder, and the key comic that started it all. Mention the most significant character to emerge from this era and their creators. Finally, include a fun fact about the first Marvel comic."
 
-## Prompt 2 (Swiss Style)
+## Prompt 2 (The Silver Age)
 
-"Good, Now lets discuss Swiss Style/ International Typographic Style (1950s-1970s). Same Format. DON'T USE WIKIPEDIA"
+"Describe the Silver Age of Marvel Comics (1961-1970s). Focus on the creative leadership during this period and the shift in character development. List the foundational superhero team that kicked off this era and name at least four other iconic characters or teams that followed. Add a fun fact about Spider-Man's first appearance."
 
-## Prompt 3 (Grunge Typography)
+## Prompt 3 (The Modern Age)
 
-"Good, Now lets discuss Reaction to Swiss - Grunge Typography. Same Format."
-
-## Prompt 4 (This File Request)
-
-"Can you create a AGENTS.md file with the contents of the prompts from this query, including this prompt?"
+"Summarize the Modern Age of Marvel Comics (1980s-Present). Discuss the trend towards darker and more complex narratives, naming two influential writers and the characters they redefined. Mention the rise of large-scale crossover events and list at least three iconic storylines. Conclude with a fun fact about the Marvel Cinematic Universe."
 
 ---
 

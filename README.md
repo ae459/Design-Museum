@@ -1,5 +1,5 @@
-# Design-Museum
+# Marvel Comic Book Museum
 
-A curated collection of design history cards.
+A virtual museum showcasing the history of Marvel Comics.
 
-Design Museum Webpage: https://ae459.github.io/Design-Museum/
+View the live site: https://ae459.github.io/Design-Museum/
